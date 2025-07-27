@@ -126,8 +126,6 @@ inline void replaceit(string& str, const string& x, const string& y) {
 
 
 
-//scan.h
-
 typedef enum { START, DONE, KEEP, NOTEND, ENDLINE, ENDLINES } State;
 // START 开始接收字符
 // DONE 完成一个Token的接收
@@ -238,7 +236,6 @@ inline void extendStartGram() {
 }
 
 
-//fset.h
 
 // First和Follow集合
 inline umap<string, set<string>> First, Follow;
@@ -293,7 +290,6 @@ inline void computeAllFollowSets() {
     }
 }
 
-//analysis.h
 
 // LR(1)构建顺序：
 // 构建项目集→构建DFA→构建分析表
